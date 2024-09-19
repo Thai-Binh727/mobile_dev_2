@@ -1,0 +1,19 @@
+App: Pinterest
+----------------
+1. Bình
+  - Làm Login page và Home
+--------------------------
+2. Đức
+  - Làm search và create
+--------------------------
+3. Hiển
+  - Làm notification (activity có 2 tab Layout là update và inbox)
+--------------------------
+4. Hải
+  - Làm saved
+--------------------------
+5. Hưng
+  - Làm phần Your account (dạng button, khi ấn vào sẽ chuyển đến 1 activity khác)
+--------------------------
+6. An
+  - kiếm ảnh (ảnh gì cx đc, ko quá lố, đa dạng về res, tối thiểu 100 ảnh), làm pp, chuẩn bị phần thuyết trình và thuyết trình

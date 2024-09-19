@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Search bar and Add button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Search bar -->
+        <EditText
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill"
+            android:hint="Find Your Pin"
+            android:padding="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:src="@drawable/search_icon_mino">
+
+        </ImageView>
+
+
+        <!-- Add button -->
+
+    </LinearLayout>
+
+    <!-- Favorite and Created tabs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4d4d4d"
+            android:text="Favorite" />
+
+        <Button
+            android:id="@+id/created_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#4d4d4d"
+            android:text="Created by you" />
+    </LinearLayout>
+
+    <!-- Grid of saved pins -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <!-- First Image -->
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="123dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flower" />
+
+        <!-- Second Image -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anime_3" />
+
+        <!-- Third Image -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="222dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beauty_8" />
+
+        <!-- Fourth Image -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/door" />
+    </GridLayout>
+
+    <!-- Saved pins count -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="4 Pins Saved"
+        android:textSize="16sp" />
+</LinearLayout>

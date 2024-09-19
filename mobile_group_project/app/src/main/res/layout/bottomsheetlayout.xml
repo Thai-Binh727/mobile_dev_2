@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon_mino"
+            android:layout_gravity="start">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/createText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creating"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shapeAppearanceOverlay="@style/round_image"
+            android:background="@color/cardview_dark_background"
+            android:paddingEnd="10dp"
+            android:src="@drawable/icon_pin"
+            tools:ignore="RtlSymmetry">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_rounded_square"
+
+            android:src="@drawable/icon_pin">
+
+        </ImageButton>
+    </LinearLayout>
+</LinearLayout>
