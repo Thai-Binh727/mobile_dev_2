@@ -19,4 +19,16 @@
     <string name="travel">Travel</string>
 
     <string name="creating">Start creating now</string>
+    <string name="the_chosen_one">The chosen one</string>
+    <string name="testing">Testing</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="options">Options</string>
+    <string name="upload_a_video">Upload a video</string>
+    <string name="create_a_short">Create a short</string>
+    <string name="hide">Hide</string>
+    <string name="report">Report</string>
+    <string name="facebook">Facebook</string>
+    <string name="gmail">Gmail</string>
+    <string name="close">Close</string>
 </resources>

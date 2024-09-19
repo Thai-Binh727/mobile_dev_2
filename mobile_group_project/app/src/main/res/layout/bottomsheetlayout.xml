@@ -1,64 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/dialogbg">
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
         android:orientation="horizontal">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/search_icon_mino"
-            android:layout_gravity="start">
-
-        </ImageButton>
 
         <TextView
             android:id="@+id/createText"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/creating"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
+            android:textAlignment="viewStart"
+            android:text="Create"
             android:padding="8dp"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp" />
 
-    </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon_mino"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/cancelButton"/>
+
+    </LinearLayout>
+
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/layoutVideo"
         android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:shapeAppearanceOverlay="@style/round_image"
-            android:background="@color/cardview_dark_background"
-            android:paddingEnd="10dp"
-            android:src="@drawable/icon_pin"
-            tools:ignore="RtlSymmetry">
+            android:src="@drawable/search_icon_mino"/>
 
-        </com.google.android.material.imageview.ShapeableImageView>
-
-        <ImageButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/search_rounded_square"
+            android:text="Upload a video"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"/>
 
-            android:src="@drawable/icon_pin">
-
-        </ImageButton>
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutShorts"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon_mino"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a short"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLive"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon_mino"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go live"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
 </LinearLayout>

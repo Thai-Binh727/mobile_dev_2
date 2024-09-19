@@ -21,11 +21,11 @@ import vn.edu.usth.fakepinterest.Notification.NotificationPage;
 import vn.edu.usth.fakepinterest.Saved.SavedPage;
 
 public class MainActivity extends AppCompatActivity {
-    private TabLayout tabLayout;
-    private ViewPager2 viewPager2;
-    private HomePageAdapter homePageAdapter;
-    private BottomNavigationView bottomNavigationView;
-    private FrameLayout frameLayout;
+    TabLayout tabLayout;
+    ViewPager2 viewPager2;
+    HomePageAdapter homePageAdapter;
+    BottomNavigationView bottomNavigationView;
+    FrameLayout frameLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -77,41 +77,38 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                frameLayout.setVisibility(View.VISIBLE);
+                viewPager2.setVisibility(View.GONE);
+
                 switch (item.getItemId()) {
                     case R.id.bottom_home:
                         tabLayout.setVisibility(View.VISIBLE);
-                        viewPager2.setVisibility(View.VISIBLE);  // Show ViewPager for Home
-                        frameLayout.setVisibility(View.GONE);    // Hide frameLayout
+                        viewPager2.setVisibility(View.VISIBLE); // Show the ViewPager again
+                        frameLayout.setVisibility(View.GONE); // Hide frameLayout
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.frameLayout, new HomePage()).commit();
                         return true;
 
                     case R.id.bottom_search:
-                        tabLayout.setVisibility(View.GONE);      // Hide tabLayout for other pages
-                        viewPager2.setVisibility(View.GONE);     // Hide ViewPager
-                        frameLayout.setVisibility(View.VISIBLE); // Show frameLayout
+                        tabLayout.setVisibility(View.GONE);
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.frameLayout, new SearchFragment()).commit();
                         return true;
 
                     case R.id.bottom_create:
                         tabLayout.setVisibility(View.GONE);
-                        viewPager2.setVisibility(View.GONE);
-                        frameLayout.setVisibility(View.VISIBLE);
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.frameLayout, new CreatePage()).commit();
+                        CreatePage bottomSheet = new CreatePage();
+                        bottomSheet.show(getSupportFragmentManager(), bottomSheet.getTag());
                         return true;
 
                     case R.id.bottom_notification:
                         tabLayout.setVisibility(View.GONE);
-                        viewPager2.setVisibility(View.GONE);
-                        frameLayout.setVisibility(View.VISIBLE);
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.frameLayout, new NotificationPage()).commit();
                         return true;
 
                     case R.id.bottom_saved:
                         tabLayout.setVisibility(View.GONE);
-                        viewPager2.setVisibility(View.GONE);
-                        frameLayout.setVisibility(View.VISIBLE);
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.frameLayout, new SavedPage()).commit();
                         return true;

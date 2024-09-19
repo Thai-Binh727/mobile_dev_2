@@ -27,29 +27,13 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/door"
+                    android:src="@drawable/animal_4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/round_image" />
 
-                <ImageButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@color/blue_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
 
-                <ImageButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="70dp"
-                    android:background="@color/blue_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -92,19 +76,6 @@
                     android:textSize="18sp"
                     android:gravity="center" />
 
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/share"
-                    android:layout_gravity="center" />
-
-                <ImageButton
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/dots_white"
-                    android:layout_gravity="center" />
 
                 <View
                     android:layout_width="0dp"
@@ -112,11 +83,12 @@
                     android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/button_save"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/pinterset_red"
                     android:layout_gravity="end"
-                    android:text="Save"
+                    android:text="@string/save"
                     android:textSize="18sp"
                     android:textColor="@color/white" />
 
@@ -704,7 +676,7 @@
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/button_main"
+        android:id="@+id/button_back_click_animal4"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
-    android:orientation="vertical"
+    tools:context=".CreateFragment"
     android:padding="10dp"
-    tools:context=".SearchFragment">
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -19,27 +19,28 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:padding="5dp"
-            android:src="@drawable/search_icon_mino"></ImageView>
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search_icon_mino">
+        </ImageView>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="fill"
-            android:hint="@string/search"
-            android:padding="10dp"
-            android:textColor="@color/cardview_light_background"
-            android:textColorHint="@color/white"
-            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="10dp"
+            android:hint="@string/search"
+            android:textColorHint="@color/white"
+            android:gravity="fill"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="fill_horizontal"
-            android:src="@drawable/search_icon_mino">
+            android:src="@drawable/search_icon_mino"
+            android:layout_gravity="fill_horizontal">
 
         </ImageView>
     </LinearLayout>
@@ -47,18 +48,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/Heading_search"
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:paddingBottom="10dp"
-        android:text="@string/Heading_search"
         android:textColor="@color/white"
-        android:textSize="20sp"></TextView>
+        android:textSize="20sp">
+    </TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="5dp">
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -66,65 +68,69 @@
             android:layout_weight="1"
             android:paddingEnd="5dp"
             tools:ignore="RtlSymmetry">
-
             <Button
+                android:layout_width="match_parent"
                 android:id="@+id/search_button_1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="400dp"
                 android:layout_height="400dp"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/search1"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
+                android:textColor="@color/white"
                 android:text="@string/gardening"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="1"
             android:paddingStart="5dp"
+            android:layout_weight="1"
             tools:ignore="RtlSymmetry">
-
             <Button
+                android:layout_width="match_parent"
                 android:id="@+id/search_button_2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/search2"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
+                android:textColor="@color/white"
                 android:text="@string/beauty"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
@@ -133,8 +139,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="5dp">
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -142,65 +148,69 @@
             android:layout_weight="1"
             android:paddingEnd="5dp"
             tools:ignore="RtlSymmetry">
-
             <Button
+                android:layout_width="match_parent"
                 android:id="@+id/search_button_3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="400dp"
                 android:layout_height="400dp"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/search3"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
+                android:textColor="@color/white"
                 android:text="@string/fitness"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="1"
             android:paddingStart="5dp"
+            android:layout_weight="1"
             tools:ignore="RtlSymmetry">
-
             <Button
+                android:layout_width="match_parent"
                 android:id="@+id/search_button_4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/search4"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
+                android:textColor="@color/white"
                 android:text="@string/animals"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
@@ -209,8 +219,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="5dp">
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -218,65 +228,69 @@
             android:layout_weight="1"
             android:paddingEnd="5dp"
             tools:ignore="RtlSymmetry">
-
             <Button
+                android:layout_width="match_parent"
                 android:id="@+id/search_button_5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="400dp"
                 android:layout_height="400dp"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/search5"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
-                android:text="@string/travel"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:text="@string/travel"
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="1"
             android:paddingStart="5dp"
+            android:layout_weight="1"
             tools:ignore="RtlSymmetry">
-
             <Button
-                android:id="@+id/search_button_6"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:id="@+id/search_button_6"
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/search6"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
-                android:text="@string/horror"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:text="@string/horror"
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
@@ -285,8 +299,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="5dp">
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -294,65 +308,70 @@
             android:layout_weight="1"
             android:paddingEnd="5dp"
             tools:ignore="RtlSymmetry">
-
             <Button
-                android:id="@+id/search_button_7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:id="@+id/search_button_7"
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="400dp"
                 android:layout_height="400dp"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/search7"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
-                android:text="@string/anime"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:text="@string/anime"
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="1"
             android:paddingStart="5dp"
+            android:layout_weight="1"
             tools:ignore="RtlSymmetry">
 
             <Button
-                android:id="@+id/search_button_8"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.0" />
+                android:id="@+id/search_button_8"
+                android:alpha="0.0"
+                android:layout_height="match_parent">
+            </Button>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.3"
-                android:scaleType="centerCrop"
                 android:src="@drawable/flower"
-                app:shapeAppearanceOverlay="@style/round_image" />
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/round_image"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_gravity="bottom"
-                android:gravity="center"
+                android:layout_centerInParent="true"
                 android:padding="8dp"
-                android:text="@string/flower"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:text="@string/flower"
+                android:gravity="center"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 

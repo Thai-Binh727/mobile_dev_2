@@ -1,161 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/black"
-    tools:context=".Homepage.clicked_on_image">
+    android:orientation="vertical"
+    android:id="@+id/search_end_act"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_arrow"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="10dp"
+            android:background="@drawable/search_background"
+            android:gravity="fill"
+            android:textColorHint="@color/light_gray"
+            android:hint="@string/the_chosen_one"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="1000dp"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_icon_mino"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_corner">
+            </ImageView>
+
+            <FrameLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+
+                    android:src="@drawable/search_end_cutiemeow">
+                </ImageView>
+
+                <TextView
+                    android:layout_marginStart="60dp"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:text="Meow~~~">
+
+                </TextView>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
     <ScrollView
+        android:id="@+id/homepage_all_scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="5dp"
-            android:paddingEnd="5dp"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/door"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/round_image" />
-
-                <ImageButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@color/blue_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-                <ImageButton
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="70dp"
-                    android:background="@color/blue_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:layout_marginTop="5dp">
-
-                <ImageButton
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/heart"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="3dp"
-                    android:text="69"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:gravity="center" />
-
-                <ImageButton
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/comment"
-                    android:layout_gravity="center" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="6dp"
-                    android:text="20"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:gravity="center" />
-
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/share"
-                    android:layout_gravity="center" />
-
-                <ImageButton
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/dots_white"
-                    android:layout_gravity="center" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/pinterset_red"
-                    android:layout_gravity="end"
-                    android:text="Save"
-                    android:textSize="18sp"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:text="Pink door"
-                android:textSize="20sp"
-                android:textColor="@color/white" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/rounded_corner"
-                android:hint="Add a comment"
-                android:paddingStart="15dp"
-                android:textColorHint="@color/gray"
-                android:textColor="@color/white"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:layout_marginBottom="10dp"
-                android:text="More to explore"
-                android:textSize="20sp"
-                android:textColor="@color/white" />
-
+            <!-- Parent LinearLayout to divide screen horizontally -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -170,43 +111,30 @@
                     android:padding="10dp"
                     android:background="@color/black">
 
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:orientation="vertical">
+
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:src="@drawable/door"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
-                        <FrameLayout
+                        <Button
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginStart="5dp"
-                                android:text="Pink Door"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                            android:id="@+id/search_end_1"
+                            android:alpha="0.0"
+                            android:layout_height="match_parent">
 
-                            <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                        </Button>
+                    </FrameLayout>
 
-                        </FrameLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -219,29 +147,15 @@
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
-
-                        <FrameLayout
+                        <Button
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginStart="5dp"
-                                android:text="IDK"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                            android:id="@+id/search_end_3"
+                            android:alpha="0.0"
+                            android:layout_height="match_parent">
 
-                            <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                        </Button>
 
-                        </FrameLayout>
-                    </LinearLayout>
+                    </FrameLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -250,12 +164,12 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/beauty_8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            android:src="@drawable/beauty_8"
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -439,7 +353,7 @@
                     android:padding="10dp"
                     android:background="@color/black">
 
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -452,30 +366,17 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
-                        <FrameLayout
+                        <Button
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginStart="5dp"
-                                android:text="Dog"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                            android:id="@+id/search_end_2"
+                            android:alpha="0.0"
+                            android:layout_height="match_parent">
 
-                            <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                        </Button>
 
-                        </FrameLayout>
-                    </LinearLayout>
+                    </FrameLayout>
 
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -489,28 +390,15 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
-                        <FrameLayout
+                        <Button
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginStart="5dp"
-                                android:text="Parrot"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                            android:id="@+id/search_end_4"
+                            android:alpha="0.0"
+                            android:layout_height="match_parent">
 
-                            <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                        </Button>
 
-                        </FrameLayout>
-                    </LinearLayout>
+                    </FrameLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -697,19 +585,8 @@
                         </FrameLayout>
                     </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
+            </LinearLayout>
         </LinearLayout>
 
-    </ScrollView>
-
-    <ImageButton
-        android:id="@+id/button_main"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:alpha="0.75"
-        android:background="@drawable/white_arrow" />
-
-</FrameLayout>
+    </ScrollView></LinearLayout>

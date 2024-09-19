@@ -5,8 +5,8 @@
     android:id="@+id/login_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:background="@color/black"
+    android:layout_gravity="center"
     android:orientation="vertical"
     android:padding="0dp"
     tools:context=".LoginPage.Login_Page">
