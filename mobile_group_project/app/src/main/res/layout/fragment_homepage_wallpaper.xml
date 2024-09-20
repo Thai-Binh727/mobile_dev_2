@@ -56,9 +56,9 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="60dp"
-                        android:backgroundTint="@color/light_gray"
+                        android:backgroundTint="@color/gray"
                         android:text="View board"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +90,7 @@
                             android:layout_marginEnd="10dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/wallpaper_10"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -99,7 +99,7 @@
                             android:layout_marginEnd="10dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/wallpaper_12"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -108,7 +108,7 @@
                             android:layout_marginEnd="10dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/wallpaper_21"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -117,7 +117,7 @@
                             android:layout_marginEnd="10dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/wallpaper_22"
                             app:shapeAppearanceOverlay="@style/round_image" />
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -274,7 +274,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/anime_6"
+                            android:src="@drawable/wallpaper_27"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -437,7 +437,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/animal_4"
+                            android:src="@drawable/wallpaper_2"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -475,7 +475,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/animal_2"
+                            android:src="@drawable/wallpaper_5"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -513,7 +513,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/beauty_8"
+                            android:src="@drawable/wallpaper_29"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -589,7 +589,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/wallpaper_14"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -627,7 +627,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/door"
+                            android:src="@drawable/wallpaper_21"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout

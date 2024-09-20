@@ -36,7 +36,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
-                        android:text="Wallpaper"
+                        android:text="Cat"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
                         android:layout_height="60dp"
                         android:backgroundTint="@color/gray"
                         android:text="View board"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
                             android:layout_marginEnd="10dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/door"
+                            android:src="@drawable/animal_9"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <com.google.android.material.imageview.ShapeableImageView
@@ -91,7 +91,7 @@
                             android:layout_marginEnd="10dp"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/animal_2"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                     </LinearLayout>
@@ -136,7 +136,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/door"
+                            android:src="@drawable/animal_1"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/beauty_8"
+                            android:src="@drawable/animal_7"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -250,7 +250,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/anime_6"
+                            android:src="@drawable/animal_6"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -326,7 +326,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/wallpaper_3"
+                            android:src="@drawable/animal_1"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -489,7 +489,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/beauty_8"
+                            android:src="@drawable/animal_8"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -565,7 +565,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/animal_3"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -603,7 +603,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/door"
+                            android:src="@drawable/animal_5"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
@@ -641,7 +641,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/anime_6"
+                            android:src="@drawable/animal_7"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout

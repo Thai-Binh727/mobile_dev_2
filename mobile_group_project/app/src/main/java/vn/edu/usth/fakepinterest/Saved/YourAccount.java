@@ -9,8 +9,10 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
+import vn.edu.usth.fakepinterest.Account;
 import vn.edu.usth.fakepinterest.Homepage.clicked_on_image_door;
 import vn.edu.usth.fakepinterest.R;
 
@@ -35,6 +37,16 @@ public class YourAccount extends Fragment {
                 // Remove the current fragment
                 fragmentTransaction.remove(YourAccount.this);
                 fragmentTransaction.commit();
+            }
+        });
+
+        Button acc = view.findViewById(R.id.cheems_msg2);
+        acc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment clicked = new Account();
+                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
+                fm.replace(R.id.main, clicked).commit();
             }
         });
         return view;
