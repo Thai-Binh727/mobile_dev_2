@@ -1,4 +1,4 @@
-package vn.edu.usth.fakepinterest.Notification;
+package vn.edu.usth.fakepinterest.SearchPage;
 
 import android.os.Bundle;
 
@@ -11,19 +11,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import vn.edu.usth.fakepinterest.Homepage.clicked_on_image;
 import vn.edu.usth.fakepinterest.R;
 
-public class Clicked_update extends Fragment {
-    private ImageButton button_back_notification;
+public class AnimalAlbum extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_clicked_update, container, false);
-
-        button_back_notification = view.findViewById(R.id.button_main_1);
-        button_back_notification.setOnClickListener(new View.OnClickListener() {
+        View v = inflater.inflate(R.layout.fragment_animal_album, container, false);
+        ImageButton button_back = v.findViewById(R.id.button_back_click);
+        button_back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 // Handle the back button click to remove the fragment
@@ -31,12 +29,13 @@ public class Clicked_update extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                 // Remove the current fragment
-                fragmentTransaction.remove(Clicked_update.this);
+                fragmentTransaction.remove(AnimalAlbum.this);
                 fragmentTransaction.commit();
 
+                // Optional: Add a pop back stack call if you are using back stack
+                fragmentManager.popBackStack();
             }
         });
-
-        return view;
+        return v;
     }
 }
