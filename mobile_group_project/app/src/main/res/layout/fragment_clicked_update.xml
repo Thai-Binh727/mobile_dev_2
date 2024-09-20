@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
-    tools:context=".Homepage.clicked_on_image">
+    tools:context=".Notification.Clicked_update">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,114 +14,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
             android:paddingStart="5dp"
-            android:paddingEnd="5dp"
-            android:orientation="vertical">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/door"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/round_image" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:layout_marginTop="5dp">
-
-                <ImageButton
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/heart"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="3dp"
-                    android:text="69"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:gravity="center" />
-
-                <ImageButton
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/comment"
-                    android:layout_gravity="center" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="6dp"
-                    android:text="20"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:gravity="center" />
-
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/share"
-                    android:layout_gravity="center" />
-
-                <ImageButton
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/dots_white"
-                    android:layout_gravity="center" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/pinterset_red"
-                    android:layout_gravity="end"
-                    android:text="Save"
-                    android:textSize="18sp"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:text="Pink door"
-                android:textSize="20sp"
-                android:textColor="@color/white" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/rounded_corner"
-                android:hint="Add a comment"
-                android:paddingStart="15dp"
-                android:textColorHint="@color/gray"
-                android:textColor="@color/white"/>
+            android:paddingEnd="5dp">
 
             <View
                 android:layout_width="match_parent"
@@ -131,12 +27,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
-                android:layout_marginBottom="10dp"
-                android:text="More to explore"
-                android:textSize="20sp"
-                android:textColor="@color/white" />
+                android:text="Inspired by your recent activity"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -148,9 +44,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@color/black"
                     android:orientation="vertical"
-                    android:padding="10dp"
-                    android:background="@color/black">
+                    android:padding="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -158,32 +54,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/door"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Pink Door"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -195,32 +92,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/wallpaper_25"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="IDK"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -232,32 +130,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/beauty_8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Just a girl"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -269,32 +168,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/anime_6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text=""
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -306,32 +206,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/animal_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Parrot"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -343,32 +244,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/wallpaper_3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Rick and Morty"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -380,32 +282,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/animal_4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            android:src="@drawable/animal_4"
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Dog"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -417,9 +320,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@color/black"
                     android:orientation="vertical"
-                    android:padding="10dp"
-                    android:background="@color/black">
+                    android:padding="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -427,32 +330,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/animal_4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Dog"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -464,32 +368,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/animal_2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Parrot"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -501,32 +406,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/beauty_8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Just a girl"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -538,32 +444,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/wallpaper_3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Rick and Morty"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -575,32 +482,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/wallpaper_25"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="IDK"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -612,32 +520,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/door"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text="Pink Door"
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -649,32 +558,33 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/anime_6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            app:shapeAppearanceOverlay="@style/round_image"/>
+                            android:src="@drawable/anime_6"
+                            app:shapeAppearanceOverlay="@style/round_image" />
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" >
+                            android:layout_height="wrap_content">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start"
                                 android:text=""
-                                android:textColor="@color/white"
-                                android:gravity="start" />
+                                android:textColor="@color/white" />
 
                             <ImageView
-                                android:paddingEnd="5dp"
-                                android:paddingTop="5dp"
-                                android:src="@drawable/dots_white"
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
-                                android:layout_gravity="end" />
+                                android:layout_gravity="end"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="5dp"
+                                android:src="@drawable/dots_white" />
 
                         </FrameLayout>
                     </LinearLayout>
@@ -685,13 +595,30 @@
 
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/button_main"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:alpha="0.75"
-        android:background="@drawable/white_arrow" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_main_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.75"
+            android:background="@drawable/white_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="More inspiration based on your interest in..."
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
 
 </FrameLayout>
