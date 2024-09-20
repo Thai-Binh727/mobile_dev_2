@@ -86,6 +86,7 @@
                     android:layout_height="22dp"
                     android:layout_marginStart="20dp"
                     android:background="@drawable/dots_white"
+                    android:id="@+id/share_this_image"
                     android:layout_gravity="center" />
 
                 <View

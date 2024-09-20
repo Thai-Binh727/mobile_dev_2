@@ -31,8 +31,9 @@
             android:background="@drawable/search_background"
             android:gravity="fill"
             android:textColorHint="@color/light_gray"
-            android:hint="@string/the_chosen_one"
-            android:textSize="20sp"/>
+            android:hint="@string/the_second_chosen_one"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
 
     </FrameLayout>
 
@@ -69,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textColor="@color/white"
-                    android:text="@string/meow1">
+                    android:text="@string/meow">
 
                 </TextView>
 
@@ -104,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textColor="@color/white"
-                    android:text="@string/meow1">
+                    android:text="@string/meow">
 
                 </TextView>
 
@@ -139,17 +140,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textColor="@color/white"
-                    android:text="@string/meow1">
+                    android:text="@string/meow">
 
                 </TextView>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.0"
-                    android:id="@+id/search_end_meow_3">
-
-                </Button>
             </FrameLayout>
         </LinearLayout>
 
@@ -185,22 +178,14 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
-
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/door"
+                            android:src="@drawable/animal_4"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
-                        <Button
-                            android:layout_width="match_parent"
-                            android:id="@+id/search_end_1"
-                            android:alpha="0.0"
-                            android:layout_height="match_parent">
-
-                        </Button>
                     </FrameLayout>
 
                     <FrameLayout
@@ -210,19 +195,12 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/anime_6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
-                        <Button
-                            android:layout_width="match_parent"
-                            android:id="@+id/search_end_3"
-                            android:alpha="0.0"
-                            android:layout_height="match_parent">
-
-                        </Button>
 
                     </FrameLayout>
 
@@ -323,20 +301,13 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/animal_4"
+                            android:src="@drawable/animal_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
-                        <Button
-                            android:layout_width="match_parent"
-                            android:id="@+id/search_end_2"
-                            android:alpha="0.0"
-                            android:layout_height="match_parent">
-
-                        </Button>
 
                     </FrameLayout>
 
@@ -347,20 +318,13 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/animal_2"
+                            android:src="@drawable/beauty_8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
-                        <Button
-                            android:layout_width="match_parent"
-                            android:id="@+id/search_end_4"
-                            android:alpha="0.0"
-                            android:layout_height="match_parent">
-
-                        </Button>
 
                     </FrameLayout>
 
@@ -371,7 +335,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/beauty_8"
+                            android:src="@drawable/wallpaper_25"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
