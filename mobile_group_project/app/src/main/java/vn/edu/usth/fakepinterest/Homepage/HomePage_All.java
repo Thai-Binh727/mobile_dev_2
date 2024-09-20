@@ -12,20 +12,65 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.android.material.imageview.ShapeableImageView;
 
 import vn.edu.usth.fakepinterest.R;
+import vn.edu.usth.fakepinterest.ShareFragment;
 
 public class HomePage_All extends Fragment {
 
     private static final String TAG = "HomePage_All";
+    private ImageView share1;
+    private ImageView share2;
+    private ImageView share3;
+    private ImageView share4;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_homepage_all, container, false);
+        View view = inflater.inflate(R.layout.fragment_homepage_all, container, false);
+
+        share1 = view.findViewById(R.id.share1);
+        share2 = view.findViewById(R.id.share2);
+        share3 = view.findViewById(R.id.share3);
+        share4 = view.findViewById(R.id.share4);
+
+        share1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShareFragment shareFragment = new ShareFragment();
+                shareFragment.show(getActivity().getSupportFragmentManager(), shareFragment.getTag());
+            }
+        });
+
+        share2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShareFragment shareFragment = new ShareFragment();
+                shareFragment.show(getActivity().getSupportFragmentManager(), shareFragment.getTag());
+            }
+        });
+
+        share3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShareFragment shareFragment = new ShareFragment();
+                shareFragment.show(getActivity().getSupportFragmentManager(), shareFragment.getTag());
+            }
+        });
+
+        share4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShareFragment shareFragment = new ShareFragment();
+                shareFragment.show(getActivity().getSupportFragmentManager(), shareFragment.getTag());
+            }
+        });
+        return view;
     }
 
     @Override
@@ -88,4 +133,6 @@ public class HomePage_All extends Fragment {
         // Commit the transaction
         fragmentTransaction.commit();
     }
+
+
 }

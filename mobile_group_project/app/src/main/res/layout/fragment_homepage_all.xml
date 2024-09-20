@@ -55,6 +55,7 @@
                             android:textColor="@color/white" />
 
                         <ImageView
+                            android:id="@+id/share1"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_gravity="end"
@@ -93,6 +94,7 @@
                             android:textColor="@color/white" />
 
                         <ImageView
+                            android:id="@+id/share3"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_gravity="end"
@@ -332,6 +334,7 @@
                             android:textColor="@color/white" />
 
                         <ImageView
+                            android:id="@+id/share2"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_gravity="end"
@@ -370,6 +373,7 @@
                             android:textColor="@color/white" />
 
                         <ImageView
+                            android:id="@+id/share4"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_gravity="end"
