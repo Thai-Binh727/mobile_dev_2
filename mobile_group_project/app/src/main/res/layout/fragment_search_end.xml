@@ -187,7 +187,7 @@
 
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/door"
+                            android:src="@drawable/garden_2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
@@ -210,7 +210,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/garden_4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -237,7 +237,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/beauty_8"
+                            android:src="@drawable/garden_6"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
                     </LinearLayout>
@@ -249,7 +249,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/anime_6"
+                            android:src="@drawable/garden_7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -281,7 +281,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/wallpaper_3"
+                            android:src="@drawable/garden_10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -297,7 +297,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/animal_4"
+                            android:src="@drawable/garden_4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -323,7 +323,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/animal_4"
+                            android:src="@drawable/garden_3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -347,7 +347,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/animal_2"
+                            android:src="@drawable/garden_5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -371,7 +371,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/beauty_8"
+                            android:src="@drawable/garden_7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -387,7 +387,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/wallpaper_3"
+                            android:src="@drawable/garden_8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -406,7 +406,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/wallpaper_25"
+                            android:src="@drawable/garden_9"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -422,7 +422,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/door"
+                            android:src="@drawable/garden_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -438,7 +438,7 @@
                         android:orientation="vertical">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:src="@drawable/anime_6"
+                            android:src="@drawable/garden_6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"

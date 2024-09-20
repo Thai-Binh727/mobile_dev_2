@@ -37,8 +37,9 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/rounded_corner"
-        android:src="@drawable/search_icon_mino"
+        android:src="@drawable/saved_icon"
         android:textColor="@color/white"
+        android:scaleType="fitCenter"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_margin="16dp"/>

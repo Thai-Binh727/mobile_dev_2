@@ -1,6 +1,5 @@
 package vn.edu.usth.fakepinterest.SearchPage;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,8 +12,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import vn.edu.usth.fakepinterest.Homepage.clicked_on_image;
-import vn.edu.usth.fakepinterest.MainActivity;
 import vn.edu.usth.fakepinterest.R;
 import vn.edu.usth.fakepinterest.Saved.TheSecondChosenOne;
 

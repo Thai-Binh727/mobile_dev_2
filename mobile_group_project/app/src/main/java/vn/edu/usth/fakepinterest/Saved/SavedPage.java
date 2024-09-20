@@ -26,6 +26,8 @@ import vn.edu.usth.fakepinterest.ShareFragment;
 
 public class SavedPage extends Fragment {
     ImageButton button_create;
+    ImageButton to_account;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_saved_page, container, false);
@@ -49,7 +51,15 @@ public class SavedPage extends Fragment {
                 fm.replace(R.id.main, clicked).commit();
             }
         });*/
-
+        to_account = view.findViewById(R.id.go_to_account);
+        to_account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment clicked = new YourAccount();
+                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
+                fm.replace(R.id.main, clicked).commit();
+            }
+        });
         return view;
     }
 }

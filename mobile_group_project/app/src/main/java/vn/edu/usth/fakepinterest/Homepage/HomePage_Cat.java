@@ -78,7 +78,7 @@ public class HomePage_Cat extends Fragment {
     }
 
     private void navigateToDestinationFragment() {
-        Fragment destinationFragment = new clicked_on_image(); // Replace with your destination fragment
+        Fragment destinationFragment = new clicked_on_image_door(); // Replace with your destination fragment
         FragmentManager fragmentManager = getParentFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
