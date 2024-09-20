@@ -26,7 +26,6 @@ public class ShareFragment extends BottomSheetDialogFragment {
 
         View view = inflater.inflate(R.layout.share_layout, container, false);
         Button cancelButton = view.findViewById(R.id.close_share);
-
         cancelButton.setOnClickListener(v -> {
             getActivity().getSupportFragmentManager().popBackStack();
         });

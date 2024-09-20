@@ -19,6 +19,7 @@ import vn.edu.usth.fakepinterest.Homepage.HomePage;
 import vn.edu.usth.fakepinterest.Homepage.HomePageAdapter;
 import vn.edu.usth.fakepinterest.Notification.NotificationPage;
 import vn.edu.usth.fakepinterest.Saved.SavedPage;
+import vn.edu.usth.fakepinterest.SearchPage.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;

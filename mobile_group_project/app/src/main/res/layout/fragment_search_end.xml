@@ -39,23 +39,31 @@
     <HorizontalScrollView
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp">
+        android:layout_width="1000dp"
+        android:layout_height="70dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_icon_mino"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_corner">
+            </ImageView>
 
             <FrameLayout
                 android:layout_marginStart="10dp"
-                android:layout_width="160dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/rounded_corner">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="5dp"
 
@@ -63,93 +71,16 @@
                 </ImageView>
 
                 <TextView
-                    android:layout_marginStart="50dp"
-                    android:textSize="20sp"
+                    android:layout_marginStart="60dp"
+                    android:textSize="25dp"
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textColor="@color/white"
-                    android:text="@string/meow1">
+                    android:text="Meow~~~">
 
                 </TextView>
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.0"
-                    android:id="@+id/search_end_meow_1">
-
-                </Button>
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_marginStart="10dp"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/rounded_corner">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="5dp"
-
-                    android:src="@drawable/search_end_cutiemeow">
-                </ImageView>
-
-                <TextView
-                    android:layout_marginStart="50dp"
-                    android:textSize="20sp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/white"
-                    android:text="@string/meow1">
-
-                </TextView>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.0"
-                    android:id="@+id/search_end_meow_2">
-
-                </Button>
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_marginStart="10dp"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/rounded_corner">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="5dp"
-
-                    android:src="@drawable/search_end_cutiemeow">
-                </ImageView>
-
-                <TextView
-                    android:layout_marginStart="50dp"
-                    android:textSize="20sp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/white"
-                    android:text="@string/meow1">
-
-                </TextView>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.0"
-                    android:id="@+id/search_end_meow_3">
-
-                </Button>
             </FrameLayout>
         </LinearLayout>
 
@@ -163,7 +94,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <!-- Parent LinearLayout to divide screen horizontally -->
             <LinearLayout
@@ -240,6 +171,27 @@
                             android:src="@drawable/beauty_8"
                             app:shapeAppearanceOverlay="@style/round_image" />
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Just a girl"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -256,6 +208,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -272,6 +245,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Parrot"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -288,6 +282,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Rick and Morty"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -304,6 +319,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Dog"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -378,6 +414,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Just a girl"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -396,7 +453,25 @@
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Rick and Morty"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -413,6 +488,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="IDK"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -429,6 +525,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text="Pink Door"
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -445,6 +562,27 @@
                             android:scaleType="fitCenter"
                             app:shapeAppearanceOverlay="@style/round_image"/>
 
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:gravity="start" />
+
+                            <ImageView
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/dots_white"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end" />
+
+                        </FrameLayout>
                     </LinearLayout>
                 </LinearLayout>
 

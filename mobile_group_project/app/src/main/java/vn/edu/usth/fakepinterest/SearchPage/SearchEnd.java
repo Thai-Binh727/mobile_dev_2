@@ -16,12 +16,9 @@ import android.widget.ImageButton;
 import vn.edu.usth.fakepinterest.Homepage.clicked_on_image;
 import vn.edu.usth.fakepinterest.MainActivity;
 import vn.edu.usth.fakepinterest.R;
-import vn.edu.usth.fakepinterest.Saved.TheSecondChosenOne;
 
 public class SearchEnd extends Fragment {
-    Button meow1;
-    Button meow2;
-    Button meow3;
+
     Button button1;
     Button button2;
     Button button4;
@@ -85,38 +82,6 @@ public class SearchEnd extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment clicked = new SearchPageClick();
-                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.main, clicked).commit();
-            }
-        });
-
-
-        meow1 = v.findViewById(R.id.search_end_meow_1);
-        meow1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment clicked = new TheSecondChosenOne();
-                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.main, clicked).commit();
-            }
-        });
-
-        meow2 = v.findViewById(R.id.search_end_meow_2);
-        meow2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment clicked = new TheSecondChosenOne();
-                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.main, clicked).commit();
-            }
-        });
-
-
-        meow3 = v.findViewById(R.id.search_end_meow_3);
-        meow3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment clicked = new TheSecondChosenOne();
                 FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
                 fm.replace(R.id.main, clicked).commit();
             }

@@ -17,7 +17,6 @@ public class SearchPageClick extends Fragment {
     ImageButton button_back;
     Button animal4;
     Button share1;
-    ImageButton share2;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -42,16 +41,6 @@ public class SearchPageClick extends Fragment {
                 shareFragment.show(getActivity().getSupportFragmentManager(), shareFragment.getTag());
             }
         });
-
-        share2 = v.findViewById(R.id.share_this_image);
-        share2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ShareFragment shareFragment = new ShareFragment();
-                shareFragment.show(getActivity().getSupportFragmentManager(), shareFragment.getTag());
-            }
-        });
-
 
         animal4 = v.findViewById(R.id.go_to_animail4_end);
         animal4.setOnClickListener(new View.OnClickListener() {

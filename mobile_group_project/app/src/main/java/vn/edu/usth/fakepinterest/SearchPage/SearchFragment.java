@@ -1,4 +1,4 @@
-package vn.edu.usth.fakepinterest;
+package vn.edu.usth.fakepinterest.SearchPage;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import vn.edu.usth.fakepinterest.SearchPage.SearchEnd;
+import vn.edu.usth.fakepinterest.R;
 
 public class SearchFragment extends Fragment {
     Button button1;

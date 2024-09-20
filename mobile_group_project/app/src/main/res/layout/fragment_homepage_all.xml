@@ -570,8 +570,8 @@
                     </FrameLayout>
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
+        </LinearLayout>
 
     </ScrollView>
 </FrameLayout>
