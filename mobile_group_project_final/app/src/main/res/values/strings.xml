@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Fake pinterest</string>
+    <string name="email_adr">Email address</string>
+    <string name="policy1">By continuing, you agree to Pinterest\'s Terms of Service and acknowledge that you\'ve read our Privacy Policy.</string>
+    <string name="policy2">Notice at collection.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Heading_search">Popular on Pinterest</string>
+    <string name="test"> Testing layout</string>
+    <string name="search">Search Pinterest</string>
+    <string name="flower">Flower</string>
+    <string name="gardening">Gardening ideas</string>
+    <string name="anime">Anime</string>
+    <string name="fitness">Fitness</string>
+    <string name="animals">Animals</string>
+    <string name="beauty">Beauty</string>
+    <string name="horror">Horror</string>
+    <string name="travel">Travel</string>
+
+    <string name="creating">Start creating now</string>
+    <string name="the_chosen_one">The chosen one</string>
+    <string name="testing">Testing</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="options">Options</string>
+    <string name="upload_a_video">Upload a video</string>
+    <string name="create_a_short">Create a short</string>
+    <string name="hide">Hide</string>
+    <string name="report">Report</string>
+    <string name="facebook">Facebook</string>
+    <string name="gmail">Gmail</string>
+    <string name="close">Close</string>
+    <string name="search_your_pins">Search your Pins</string>
+    <string name="meow">Meow~~~</string>
+    <string name="the_second_chosen_one">The second chosen one</string>
+    <string name="meow1">Meow~</string>
+    <string name="doors">Doors</string>
+    <string name="idk">IDK</string>
+</resources>
